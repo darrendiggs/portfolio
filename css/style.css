@@ -82,8 +82,15 @@ h6, .h6 {
 }
 
 .jumpToProjects {
+  z-index: 4;
   margin-top: 160px;
   transition: transform .2s;
+}
+
+@media (max-width: 500px) {
+  .jumpToProjects {
+    visibility: hidden;
+  }
 }
 
 .jumpToProjects:hover {
